@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">My Survey Form</h1>
+      <p id="description">
+        Please spend time approximately 5 minutes to fill this form completely
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" required placeholder="Enter your name" />
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age (optional)</label>
+        <input
+          type="number"
+          id="number"
+          required
+          placeholder="Age"
+          min="0"
+          max="100"
+        />
+      </div>
+      <div class="form-group">
+        <label for="dropdown" id="dropdown-label">Gender</label>
+        <select name="gender" id="dropdown">
+          <option selected disabled value>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Salary</p>
+        <label for="salary-1" class="radio-label">
+          <input
+            id="salary-1"
+            type="radio"
+            name="salary"
+            value="salary-lt-100"
+          />Less than $100
+        </label>
+        <label for="salary-2" class="radio-label">
+          <input
+            id="salary-2"
+            type="radio"
+            name="salary"
+            value="salary-100-to-500"
+          />Between $100 to $500
+        </label>
+        <label for="salary-3" class="radio-label">
+          <input
+            id="salary-3"
+            type="radio"
+            name="salary"
+            value="salary-gt-500"
+          />More than $500
+        </label>
+      </div>
+      <div class="form-group">
+        <p>What is your favourite programming language ?</p>
+        <label for="fav-lang-py" class="checkbox-label">
+          <input
+            type="checkbox"
+            name="fav-programming-lang"
+            id="fav-lang-py"
+            value="python"
+          />Python
+        </label>
+        <label for="fav-lang-js" class="checkbox-label">
+          <input
+            type="checkbox"
+            name="fav-programming-lang"
+            id="fav-lang-js"
+            value="javascript"
+          />Javascript
+        </label>
+        <label for="fav-lang-php" class="checkbox-label">
+          <input
+            type="checkbox"
+            name="fav-programming-lang"
+            id="fav-lang-php"
+            value="php"
+          />PHP
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="career-story">Tell your career story briefly</label>
+        <textarea
+          name="career-story"
+          id="career-story"
+          placeholder="Tell here"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+
+  <!-- 
+  
+  Hello Camper!
+  
+  For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+  
+  - The freeCodeCamp Team 
+  
+  -->
+</html>
